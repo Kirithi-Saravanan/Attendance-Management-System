@@ -24,4 +24,8 @@
   1.Admin → Manage users, view reports
   2.Faculty → Mark and view attendance
   3.Student → View personal attendance record
+
+  
+  
+
  
