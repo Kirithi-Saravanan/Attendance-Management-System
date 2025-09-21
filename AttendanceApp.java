@@ -57,7 +57,7 @@ public class AttendanceApp {
         User user = authenticate(uname, pwd);
 
         if (user == null) {
-            System.out.println("❌ Login failed. Please restart the program.");
+            System.out.println(" Login failed. Please restart the program.");
             return;
         }
 
@@ -141,9 +141,9 @@ public class AttendanceApp {
         try {
             Role role = Role.valueOf(roleInput);
             users.add(new User(uname, pwd, role));
-            System.out.println("✅ User registered successfully.");
+            System.out.println(" User registered successfully.");
         } catch (IllegalArgumentException e) {
-            System.out.println("❌ Invalid role. Allowed values: ADMIN, FACULTY, STUDENT");
+            System.out.println(" Invalid role. Allowed values: ADMIN, FACULTY, STUDENT");
         }
     }
 
@@ -158,9 +158,9 @@ public class AttendanceApp {
         try {
             AttendanceStatus status = AttendanceStatus.valueOf(statusInput);
             records.add(new Attendance(student, date, status));
-            System.out.println("✅ Attendance recorded for " + student);
+            System.out.println(" Attendance recorded for " + student);
         } catch (IllegalArgumentException e) {
-            System.out.println("❌ Invalid status. Use PRESENT or ABSENT.");
+            System.out.println(" Invalid status. Use PRESENT or ABSENT.");
         }
     }
 
@@ -203,3 +203,4 @@ public class AttendanceApp {
         }
     }
 }
+
