@@ -68,7 +68,7 @@ public class AttendanceApp {
         }
     }
 
-    // ---------------- Authentication ----------------
+    // Authentication
     private static User authenticate(String uname, String pwd) {
         return users.stream()
                 .filter(u -> u.getUsername().equals(uname) && u.getPassword().equals(pwd))
@@ -76,7 +76,7 @@ public class AttendanceApp {
                 .orElse(null);
     }
 
-    // ---------------- Panels ----------------
+    // Panels
     private static void adminPanel() {
         while (true) {
             System.out.println("\n--- Admin Dashboard ---");
@@ -129,7 +129,7 @@ public class AttendanceApp {
         }
     }
 
-    // ---------------- Functions ----------------
+    //  Functions
     private static void registerUser() {
         System.out.print("Enter new username: ");
         String uname = scanner.nextLine();
@@ -203,4 +203,5 @@ public class AttendanceApp {
         }
     }
 }
+
 
